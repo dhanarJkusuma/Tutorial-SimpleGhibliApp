@@ -14,7 +14,7 @@ export class CardFilmComponent implements OnInit {
 
   @Input() film : Film;
 
-  imageLink = "assets/ghibli.png"
+  imagePath = "assets/ghibli.png"
 
   constructor(
     private service: FilmsService
