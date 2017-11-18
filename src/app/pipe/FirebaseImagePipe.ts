@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 import { FilmsService } from '../services/films.service';
 
-@Pipe({ name: "toFirebaseImage" })
+@Pipe({ name: "toFirebaseImage" }) 
 export class FirebaseImagePipe implements PipeTransform{
 
     constructor(

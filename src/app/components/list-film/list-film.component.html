@@ -1,22 +1,23 @@
 <div class="content-list">
-<h4>
-  List Film Ghibli Studio
-</h4>
-<hr/>
+  <h4>
+    List Film Ghibli Studio
+  </h4>
+  <hr/>
 
 
-<div class="content-films">
-    <ul *ngIf="films">
-        <li *ngFor="let film of films">
-          <card-film [film]="film"></card-film>
-        </li>
-    </ul>
-    <div *ngIf="!films" class="progress-loading">
-      <div class="progress">
-          <div class="indeterminate"></div>
-      </div>
-      <p>Fetching data...</p>
+  <div class="content-films">
+      <!-- ul akan muncul jika films == true atau films tidak kosong -->
+      <ul *ngIf="films">
+          <li *ngFor="let film of films">
+            <card-film [film]="film"></card-film>
+          </li>
+      </ul>
+      <!-- loading akan muncul jika films == false atau films kosong -->
+      <div *ngIf="!films" class="progress-loading">
+          <div class="progress">
+              <div class="indeterminate"></div>
+          </div>
+          <p>Fetching data...</p>
     </div>
-</div>
-
+  </div>
 </div>

@@ -8,6 +8,7 @@
     overflow-y:scroll;
 }
 
+/* CSS untuk loading  */
 .progress-loading > .progress{
     width: 300px;
     margin-top: 30vh;
