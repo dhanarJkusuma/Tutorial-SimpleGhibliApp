@@ -1,0 +1,22 @@
+<div class="content-list">
+<h4>
+  List Film Ghibli Studio
+</h4>
+<hr/>
+
+
+<div class="content-films">
+    <ul *ngIf="films">
+        <li *ngFor="let film of films">
+          <card-film [film]="film"></card-film>
+        </li>
+    </ul>
+    <div *ngIf="!films" class="progress-loading">
+      <div class="progress">
+          <div class="indeterminate"></div>
+      </div>
+      <p>Fetching data...</p>
+    </div>
+</div>
+
+</div>

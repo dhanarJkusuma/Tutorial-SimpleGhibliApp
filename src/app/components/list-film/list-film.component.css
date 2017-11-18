@@ -1,0 +1,22 @@
+.content-list{
+    padding: 40px;
+}
+
+.content-films{
+    height:80vh;
+    overflow-x:scroll;
+    overflow-y:scroll;
+}
+
+.progress-loading > .progress{
+    width: 300px;
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-loading > p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
